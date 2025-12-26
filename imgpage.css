@@ -1,0 +1,168 @@
+:root {
+  --green: #2E7D32;
+  --dark-green: #255C28;
+  --text: #FFFFFF;
+  --accent: #F1C40F;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.agri-header {
+  background: linear-gradient(180deg, var(--green), var(--dark-green));
+  color: var(--text);
+  border-bottom: 4px solid var(--accent);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.agri-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 84px;
+}
+
+.agri-title {
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+}
+
+.agri-title .line1 {
+  font-weight: 700;
+  font-size: clamp(18px, 2.8vw, 28px);
+  text-transform: uppercase;
+}
+
+.agri-title .line2 {
+  font-weight: 600;
+  font-size: clamp(14px, 2.2vw, 20px);
+  text-transform: uppercase;
+  opacity: 0.95;
+  margin-top: 4px;
+}
+
+.agri-accent {
+  width: 140px;
+  height: 3px;
+  background: var(--accent);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+@media (max-width: 380px) {
+  .agri-container {
+    padding: 12px 14px;
+    min-height: 72px;
+  }
+}
+#ig {
+  text-align: center;
+  font-size: 65px;
+    margin-top: 20px;
+   
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.gallery img {
+  width :400px;
+  height: 300px;
+  border: 2px solid #ff3d0036;
+  border-radius: 13px;
+  box shawdow: 4px 7px 7px 0px #ff3d0036;
+  cursor: pointer;
+  margin:10px;
+  transition: 400ms;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+:root {
+  --brown-dark: #4B2E1E;   /* deep earthy brown */
+  --brown-medium: #6B4226; /* warm brown */
+  --brown-light: #A0522D;  /* softer brown accent */
+  --tan: #D2B48C;          /* highlight */
+  --text: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.agri-footer {
+  background: linear-gradient(180deg, var(--brown-light), var(--brown-medium), var(--brown-dark));
+  color: var(--text);
+  text-align: center;
+  padding: 30px 15px;
+  border-top: 6px solid var(--tan);
+  box-shadow: inset 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.footer-title {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: var(--tan);
+  letter-spacing: 1px;
+}
+
+.footer-tagline {
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #f5deb3; /* wheat tone for elegance */
+}
+
+.agri-footer p {
+  margin: 5px 0;
+}
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+
+  background-color: #333;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #555;
+  transform: scale(1.1);
+}
